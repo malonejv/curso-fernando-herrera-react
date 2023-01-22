@@ -1,10 +1,10 @@
 //Esto también es un fragmento pero no requiere importar Fragment
 const newMessage = 'Test Parameter';
 
-export const Parametros = ()=>{
+export const Variables = ()=>{
     return (
         <>
-            <h1>Parametro 1: { newMessage }</h1>
+            <h1>Variables 1: { newMessage }</h1>
         </>
     )
 }
