@@ -3,3 +3,13 @@ html, body{
     padding: 0;
     background : rgb(226, 226, 226)
 }
+
+.counter{
+    width: fit-content;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.counter .actions{
+    margin-top: 20px;
+}

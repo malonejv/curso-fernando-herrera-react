@@ -36,10 +36,10 @@ import PropTypes from 'prop-types'
 
 //Normalmente se desectructura y se utilizan las propiedades requeridas
 export const Title1 = ( {title, subtitle = 'Default subtitle', numbers} )=>{
-    console.log(title);
     return (
         <>
             <h1>{ title }</h1>
+            <h2>{ subtitle }</h2>
             <h2>{ subtitle }</h2>
             <p>
                 <span>Number: {numbers}</span>
@@ -54,7 +54,7 @@ Title1.propTypes = {
 }
 
 Title1.defaultProps = {
-    title: 'Sin título',
+    // title: 'Sin título',
     subtitle: 'Sin subtítulo',
     numbers: 0
 }

@@ -11,7 +11,6 @@ export const Props = ( props )=>{
 
 //Normalmente se desectructura y se utilizan las propiedades requeridas
 export const Title = ( {title, subtitle = 'Default subtitle', numbers} )=>{
-    console.log(title);
     return (
         <>
             <h1>{ title }</h1>
