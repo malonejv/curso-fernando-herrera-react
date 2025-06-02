@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1748902456831" clover="3.2.0">
+  <project timestamp="1748902456831" name="All files">
+    <metrics statements="42" coveredstatements="41" conditionals="11" coveredconditionals="9" methods="19" coveredmethods="19" elements="72" coveredelements="69" complexity="0" loc="42" ncloc="42" packages="4" files="12" classes="12"/>
+    <package name="src">
+      <metrics statements="17" coveredstatements="17" conditionals="6" coveredconditionals="6" methods="6" coveredmethods="6"/>
+      <file name="App.jsx" path="C:\Apps\malonejv\cursos\curso-fernando-herrera-react\src\section-05\counter-app-vite\src\App.jsx">
+        <metrics statements="3" coveredstatements="3" conditionals="3" coveredconditionals="3" methods="1" coveredmethods="1"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="8" count="3" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+      </file>
+      <file name="Counter.jsx" path="C:\Apps\malonejv\cursos\curso-fernando-herrera-react\src\section-05\counter-app-vite\src\Counter.jsx">
+        <metrics statements="11" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="9" type="stmt"/>
+        <line num="6" count="9" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="10" count="9" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="14" count="9" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="18" count="9" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
+        <line num="35" count="1" type="stmt"/>
+      </file>
+      <file name="SecondaryApp.jsx" path="C:\Apps\malonejv\cursos\curso-fernando-herrera-react\src\section-05\counter-app-vite\src\SecondaryApp.jsx">
+        <metrics statements="3" coveredstatements="3" conditionals="3" coveredconditionals="3" methods="1" coveredmethods="1"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="8" count="3" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.base-pruebas">
+      <metrics statements="23" coveredstatements="22" conditionals="3" coveredconditionals="2" methods="13" coveredmethods="13"/>
+      <file name="02-template-string.js" path="C:\Apps\malonejv\cursos\curso-fernando-herrera-react\src\section-05\counter-app-vite\src\base-pruebas\02-template-string.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="3" count="1" type="stmt"/>
+      </file>
+      <file name="05-funciones.js" path="C:\Apps\malonejv\cursos\curso-fernando-herrera-react\src\section-05\counter-app-vite\src\base-pruebas\05-funciones.js">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+      </file>
+      <file name="06-deses-obj.js" path="C:\Apps\malonejv\cursos\curso-fernando-herrera-react\src\section-05\counter-app-vite\src\base-pruebas\06-deses-obj.js">
+        <metrics statements="2" coveredstatements="2" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="cond" truecount="0" falsecount="1"/>
+        <line num="2" count="1" type="stmt"/>
+      </file>
+      <file name="07-deses-arr.js" path="C:\Apps\malonejv\cursos\curso-fernando-herrera-react\src\section-05\counter-app-vite\src\base-pruebas\07-deses-arr.js">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+      </file>
+      <file name="08-imp-exp.js" path="C:\Apps\malonejv\cursos\curso-fernando-herrera-react\src\section-05\counter-app-vite\src\base-pruebas\08-imp-exp.js">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+        <line num="3" count="18" type="stmt"/>
+        <line num="5" count="5" type="stmt"/>
+      </file>
+      <file name="09-promesas.js" path="C:\Apps\malonejv\cursos\curso-fernando-herrera-react\src\section-05\counter-app-vite\src\base-pruebas\09-promesas.js">
+        <metrics statements="7" coveredstatements="7" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="5" count="4" type="stmt"/>
+        <line num="7" count="4" type="stmt"/>
+        <line num="8" count="4" type="stmt"/>
+        <line num="9" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="12" count="2" type="stmt"/>
+      </file>
+      <file name="11-async-await.js" path="C:\Apps\malonejv\cursos\curso-fernando-herrera-react\src\section-05\counter-app-vite\src\base-pruebas\11-async-await.js">
+        <metrics statements="7" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.config">
+      <metrics statements="1" coveredstatements="1" conditionals="2" coveredconditionals="1" methods="0" coveredmethods="0"/>
+      <file name="env.testing.js" path="C:\Apps\malonejv\cursos\curso-fernando-herrera-react\src\section-05\counter-app-vite\src\config\env.testing.js">
+        <metrics statements="1" coveredstatements="1" conditionals="2" coveredconditionals="1" methods="0" coveredmethods="0"/>
+        <line num="1" count="2" type="cond" truecount="1" falsecount="1"/>
+      </file>
+    </package>
+    <package name="src.data">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="heroes.js" path="C:\Apps\malonejv\cursos\curso-fernando-herrera-react\src\section-05\counter-app-vite\src\data\heroes.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="2" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>

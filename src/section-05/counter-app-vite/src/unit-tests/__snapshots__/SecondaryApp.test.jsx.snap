@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: SecondaryApp should match snapshot 1`] = `
+<div>
+  <div>
+    <h1
+      data-testid="test-title"
+    >
+      Hello, World!
+    </h1>
+    <blockquote>
+      Some inspiring quote here
+      <p>
+        — 
+        Franklin D. Roosevelt
+      </p>
+      <p>
+        Date: 
+        13/5/1945
+      </p>
+    </blockquote>
+  </div>
+</div>
+`;
