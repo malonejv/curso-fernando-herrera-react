@@ -1,10 +1,4 @@
-import { jest } from '@jest/globals';
-jest.unstable_mockModule('../../config/env', () => ({
-  apiKey: 'test-api-key'
-}));
-
 import { getImagen } from '../../base-pruebas/11-async-await'
-
 
 // ...existing code...
 describe('File: 11-async-await.js', () => {

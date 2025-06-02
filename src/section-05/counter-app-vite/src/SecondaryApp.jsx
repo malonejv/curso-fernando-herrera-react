@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 
-const App = ({
-  inspiringQuote= "The only limit to our realization of tomorrow is our doubts of today.",
+const SecondaryApp = ({
+  quote= "The only limit to our realization of tomorrow is our doubts of today.",
   author= "Franklin D. Roosevelt",
   date= new Date(1945, 4, 13)
 }) => {
@@ -9,7 +9,7 @@ const App = ({
     <div>
       <h1 data-testid="test-title">Hello, World!</h1>
       <blockquote>
-        {inspiringQuote}
+        {quote}
         <p>— {author}</p>
         <p>Date: {date.toLocaleDateString()}</p>
       </blockquote>
@@ -17,10 +17,10 @@ const App = ({
   );
 };
 
-App.propTypes = {
-  inspiringQuote: PropTypes.string.isRequired,
+SecondaryApp.propTypes = {
+  quote: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
   date: PropTypes.instanceOf(Date)
 };
 
-export default App;
+export default SecondaryApp;

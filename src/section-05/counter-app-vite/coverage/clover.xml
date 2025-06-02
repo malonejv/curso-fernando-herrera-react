@@ -1,13 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1748686084921" clover="3.2.0">
-  <project timestamp="1748686084921" name="All files">
-    <metrics statements="28" coveredstatements="27" conditionals="8" coveredconditionals="6" methods="14" coveredmethods="14" elements="50" coveredelements="47" complexity="0" loc="28" ncloc="28" packages="4" files="10" classes="10"/>
+<coverage generated="1748902456831" clover="3.2.0">
+  <project timestamp="1748902456831" name="All files">
+    <metrics statements="42" coveredstatements="41" conditionals="11" coveredconditionals="9" methods="19" coveredmethods="19" elements="72" coveredelements="69" complexity="0" loc="42" ncloc="42" packages="4" files="12" classes="12"/>
     <package name="src">
-      <metrics statements="3" coveredstatements="3" conditionals="3" coveredconditionals="3" methods="1" coveredmethods="1"/>
+      <metrics statements="17" coveredstatements="17" conditionals="6" coveredconditionals="6" methods="6" coveredmethods="6"/>
       <file name="App.jsx" path="C:\Apps\malonejv\cursos\curso-fernando-herrera-react\src\section-05\counter-app-vite\src\App.jsx">
         <metrics statements="3" coveredstatements="3" conditionals="3" coveredconditionals="3" methods="1" coveredmethods="1"/>
         <line num="3" count="1" type="stmt"/>
-        <line num="8" count="1" type="stmt"/>
+        <line num="8" count="3" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+      </file>
+      <file name="Counter.jsx" path="C:\Apps\malonejv\cursos\curso-fernando-herrera-react\src\section-05\counter-app-vite\src\Counter.jsx">
+        <metrics statements="11" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="9" type="stmt"/>
+        <line num="6" count="9" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="10" count="9" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="14" count="9" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="18" count="9" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
+        <line num="35" count="1" type="stmt"/>
+      </file>
+      <file name="SecondaryApp.jsx" path="C:\Apps\malonejv\cursos\curso-fernando-herrera-react\src\section-05\counter-app-vite\src\SecondaryApp.jsx">
+        <metrics statements="3" coveredstatements="3" conditionals="3" coveredconditionals="3" methods="1" coveredmethods="1"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="8" count="3" type="stmt"/>
         <line num="20" count="1" type="stmt"/>
       </file>
     </package>

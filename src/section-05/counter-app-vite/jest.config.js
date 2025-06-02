@@ -4,7 +4,7 @@ module.exports = {
     {
       displayName: 'unit',
       testMatch: ['**/unit-tests/**/*.test.{js,jsx}'],
-      setupFiles: ['./jest.setup.js'],
+      setupFiles: ['./jest.setup.js', './jest.setup.unit-test.js'],
       setupFilesAfterEnv: ['dotenv/config'],
       testEnvironment: 'jsdom',
       moduleNameMapper: {
@@ -29,7 +29,4 @@ module.exports = {
   },
   extensionsToTreatAsEsm: ['.jsx'],
   moduleFileExtensions: ['js', 'jsx'],
-  // transformIgnorePatterns: [
-  //   'node_modules/(?!whatwg-fetch)',
-  // ],
 };
