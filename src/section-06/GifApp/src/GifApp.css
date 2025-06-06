@@ -18,6 +18,14 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
+h1 {
+  font-size: 2.5rem;
+  margin: 0 0 1rem 0;
+  text-align: center;
+  color: #f8f8f8;
+}
+
+
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
@@ -31,10 +39,6 @@
   a:nth-of-type(2) .logo {
     animation: logo-spin infinite 20s linear;
   }
-}
-
-.card {
-  padding: 2em;
 }
 
 .read-the-docs {

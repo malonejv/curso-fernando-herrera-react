@@ -1,0 +1,1 @@
+export const apiKey = import.meta.env.VITE_GIPHY_API_KEY || 'not-configured-api-key';

@@ -1,29 +1,40 @@
 import { useState } from "react";
 import "./GifApp.css";
-import { AddCategory } from "./components/AddCategory/AddCategory";
+import { AddCategory, GifGrid  } from "./components";
+import { Assertion } from "./common/Assertion";
 
 function GifApp() {
-  const [categories, setCategories] = useState(["Perros"]);
+  const [categories, setCategories] = useState(["Random"]);
 
-  // const onAddCategory = () => {
-  //   const categoryInput = document.querySelector(ui.categoryInput);
+  const onNewCategory = (newCategory) => {
+    try {
+      Assertion.This(newCategory).IsNotNullOrEmpty("Debe ingresar una categoría.");
 
-  //   setCategories([categoryInput.value, ...categories]);
-  // };
+      try {
+        Assertion.This(categories).DoesNotContain(newCategory);
+
+        setCategories([newCategory, ...categories]);
+      } catch {
+        return;
+      }
+    } catch (error) {
+      console.error(error.message);
+      return;
+    }
+  };
+
+  const handleRemoveCategory = (category) => {
+    const updatedCategories = categories.filter((cat) => cat !== category);
+    setCategories(updatedCategories);
+  };
+  
   return (
     <>
-      {/*title*/}
       <h1>GifApp</h1>
-      <AddCategory setCategories={setCategories} />
-      {/*Listado de gif*/}
-      <ul>
-        {categories.map((category) => (
-          <li key={category}>
-            <h2>{category}</h2>
-            {/* Aquí iría el componente GifList que mostraría los gifs de la categoría */}
-          </li>
-        ))}
-      </ul>
+      <AddCategory onNewCategory={onNewCategory} />
+      {categories.map((category) => (
+        <GifGrid key={category} category={category} onRemove={handleRemoveCategory} />
+      ))}
     </>
   );
 }

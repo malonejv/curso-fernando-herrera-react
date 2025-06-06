@@ -23,9 +23,15 @@ export class Assertion {
 }
 
 class StringAssertion extends Assertion {
-    IsNotNulOrEmpty(message) {
+    IsNotNullOrEmpty(message) {
         if (!this.target || this.target.trim() === '') {
             throw new Error(message || 'String cannot be null or empty');
+        }
+        return this;
+    }
+    IsString(message) {
+        if (typeof this.target !== 'string') {
+            throw new Error(message || 'Value must be a string');
         }
         return this;
     }
@@ -43,23 +49,15 @@ class StringAssertion extends Assertion {
         }
         return this;
     }
-    IsPhoneNumber(message) {
-        const phonePattern = /^\+?[1-9]\d{1,14}$/; // E.164 format
-        if (!phonePattern.test(this.target)) {
-            throw new Error(message || 'Invalid phone number format');
-        }
-        return this;
-    }
-    IsDate(message) {
-        const date = new Date(this.target);
-        if (isNaN(date.getTime())) {
-            throw new Error(message || 'Invalid date format');
-        }
-        return this;
-    }
 }
 
 class NumberAssertion extends Assertion {
+    IsNumber(message) {
+        if (typeof this.target !== 'number' || isNaN(this.target)) {
+            throw new Error(message || 'Value must be a number');
+        }
+        return this;
+    }
     IsGreaterThanZero(message) {
         if (this.target <= 0) {
             throw new Error(message || 'Number must be greater than zero');
@@ -92,7 +90,7 @@ class NumberAssertion extends Assertion {
     }
     IsNaN(message) {
         if (!Number.isNaN(this.target)) {
-            throw new Error(message || 'Value must be NaN');
+            throw new Error(message || 'Value must not be a number');
         }
         return this;
     }
