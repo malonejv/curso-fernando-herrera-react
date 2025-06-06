@@ -1,0 +1,11 @@
+div.add-category {
+    text-align: left;
+
+}
+
+div.add-category-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.3rem;
+}
