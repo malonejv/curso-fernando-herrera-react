@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GridItem Should match snaptshot 1`] = `
+<div>
+  <div
+    class="card"
+  >
+    <img
+      alt="Some title"
+      src="https://some-image.png/"
+    />
+    <h3>
+      Some title
+    </h3>
+  </div>
+</div>
+`;
