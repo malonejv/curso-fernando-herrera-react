@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import PropTypes from "prop-types";
 import { Assertion } from "../../common/Assertion";
 import "./AddCategory.css";
 
@@ -28,7 +29,7 @@ export const AddCategory = ({ onNewCategory }) => {
   };
 
   return (
-    <form onSubmit={onSubmit}>
+    <form onSubmit={onSubmit} aria-label="form">
       <div className="add-category">
         <div className="add-category-input">
           <input type="text" name="category" id="category" placeholder="Agrega una categoría" value={categoryValue} onChange={onCategoryChange} className="mr-1" />
@@ -42,4 +43,8 @@ export const AddCategory = ({ onNewCategory }) => {
       </div>
     </form>
   );
+};
+
+AddCategory.propTypes = {
+  onNewCategory: PropTypes.func.isRequired
 };

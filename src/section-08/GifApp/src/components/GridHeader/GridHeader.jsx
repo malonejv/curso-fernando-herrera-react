@@ -1,10 +1,15 @@
-import React from "react";
 import "./GridHeader.css";
+import PropTypes from "prop-types";
 
-export const GridHeader = ({ header, onRemove }) => {
+export const GridHeader = ({ category, onRemove }) => {
   return (
     <h2 className="grid-header">
-      {header} <button onClick={onRemove}>X</button>
+      {category} <button onClick={onRemove}>X</button>
     </h2>
   );
+};
+
+GridHeader.propTypes = {
+  category: PropTypes.string.isRequired,
+  onRemove: PropTypes.func.isRequired,
 };

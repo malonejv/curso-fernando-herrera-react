@@ -23,7 +23,7 @@ function GifApp() {
     }
   };
 
-  const handleRemoveCategory = (category) => {
+  const onRemoveCategory = (category) => {
     const updatedCategories = categories.filter((cat) => cat !== category);
     setCategories(updatedCategories);
   };
@@ -33,7 +33,7 @@ function GifApp() {
       <h1>GifApp</h1>
       <AddCategory onNewCategory={onNewCategory} />
       {categories.map((category) => (
-        <GifGrid key={category} category={category} onRemove={handleRemoveCategory} />
+        <GifGrid key={category} category={category} onRemove={onRemoveCategory} />
       ))}
     </>
   );

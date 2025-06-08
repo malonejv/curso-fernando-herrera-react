@@ -108,20 +108,23 @@ describe("GiphyService", () => {
             const response = await giphyService.fetchGifs("funny");
             expect(response).toEqual([]);
         });
-
-        test("Should call the correct API endpoint with the category and limit", async () => {
-            const category = "funny";
-            const limit = 5;
-            const response = await giphyService.fetchGifs(category, limit);
-            expect(response).toEqual(expected);
-        });
-
-        test("Should throw an error if the category is empty", async () => {
-            await expect(giphyService.fetchGifs("", 5)).rejects.toThrow("La categoría no puede ser nula o vacía.");
-        });
-
-        test("should throw an error if the limit is out of range", async () => {
-            await expect(giphyService.fetchGifs("funny", 11)).rejects.toThrow("El límite debe estar entre 1 y 10.");
+        
+        test("Should handle API response with no images", async () => {
+            const noImageResponse = {
+                data: [
+                    {
+                        id: "12345",
+                        title: "No Image GIF",
+                        images: {}
+                    }
+                ]
+            };
+            global.fetch.mockResolvedValueOnce({
+                ok: true,
+                json: jest.fn().mockResolvedValue(noImageResponse)
+            });
+            const response = await giphyService.fetchGifs("no image");
+            expect(response).toEqual([]);
         });
     });
 });

@@ -25,7 +25,7 @@ export default class GiphyService {
                 }
             })
             .catch(function (err) {
-                console.error("Error fetching random gif:", err);
+                console.error(`Error: ${err?.message || 'Unknown error'}`);
             });
     }
 
@@ -56,7 +56,7 @@ export default class GiphyService {
                 }
             })
             .catch(function (err) {
-                console.error("Error fetching gifs:", err);
+                console.error(`Error: ${err?.message || 'Unknown error'}`);
             });
     }
 
@@ -99,8 +99,8 @@ export default class GiphyService {
                     url: img.images.downsized_medium.url
                 };
             }) || [];
-        } catch (error) {
-            console.error(error.message);
+        } catch (err) {
+            console.error(`Error: ${err?.message || 'Unknown error'}`);
             return [];
         }
     }
