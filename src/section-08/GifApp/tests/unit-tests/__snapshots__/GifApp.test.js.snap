@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GifApp Should render the title 1`] = `
+<div>
+  <h1>
+    GifApp
+  </h1>
+  <form
+    aria-label="form"
+  >
+    <div
+      class="add-category"
+    >
+      <div
+        class="add-category-input"
+      >
+        <input
+          class="mr-1"
+          id="category"
+          name="category"
+          placeholder="Agrega una categoría"
+          type="text"
+          value=""
+        />
+        <button
+          class="btn btn-primary"
+          id="add-button"
+          type="submit"
+        >
+          Agregar
+        </button>
+      </div>
+      <span
+        class="error"
+        id="category-error"
+      />
+    </div>
+  </form>
+  <div
+    class="gif-grid"
+    data-category="Random"
+  >
+    <h2
+      class="grid-header"
+    >
+      Random
+       
+      <button>
+        X
+      </button>
+    </h2>
+    <div
+      class="loading"
+    >
+      Cargando...
+    </div>
+    <div
+      class="card-grid"
+    />
+  </div>
+</div>
+`;
